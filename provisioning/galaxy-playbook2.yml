@@ -19,14 +19,14 @@
                tool_dependency_dir: "/home/{{ galaxy_user_name }}/toolshed_dependencies"
                library_import_dir: "/home/{{ galaxy_user_name }}/library_import"
                user_library_import_dir: "/home/{{ galaxy_user_name }}/library_import/users"
-               tool_config_file: "{{ galaxy_server_dir }}/config/tool_conf_custom.xml,{{ galaxy_shed_tool_conf_file }}"
+               tool_config_file: "{{ galaxy_server_dir }}/config/tool_conf.xml,{{ galaxy_shed_tool_conf_file }}"
                tool_sheds_config_file: "{{ galaxy_server_dir }}/config/tool_sheds_conf.xml"
                allow_library_path_paste: True
-      #galaxy_config_files:
-            #- src: "files/tool_conf_custom.xml.sample"
-            #  dest: "{{ galaxy_config_dir }}/tool_conf_custom.xml"
-            #- src: "files/tool_sheds_conf.xml.sample"
-            #  dest: "{{ galaxy_server_dir }}/config/tool_sheds_conf.xml"
+      galaxy_config_files:
+            - src: "files/tool_conf_gcac.xml.sample"
+              dest: "{{ galaxy_config_dir }}/tool_conf.xml"
+            - src: "files/tool_sheds_conf.xml.sample"
+              dest: "{{ galaxy_server_dir }}/config/tool_sheds_conf.xml"
 
   roles:
       - { role: ansible-galaxy, become: yes, become_user: "{{ galaxy_user_name }}" }
