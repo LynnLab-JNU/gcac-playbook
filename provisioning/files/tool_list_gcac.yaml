@@ -1,0 +1,81 @@
+tools:
+- name: 'padel_descriptor_calculation'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'padel_suite'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - 'b00c48ea3e74' 
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'activity_files_merge'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'padel_suite'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - '1743a0f8cbd1'
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'redundant_entries_remove'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'padel_suite'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - '46800a6ab357'
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'mayatool_extract'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'feature_selection_tools'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - 'd6567327bdc7'       
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'compound_id_extract'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'feature_selection_tools'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - '179e2578e4c0'       
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'candidate_compound_select'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'feature_selection_tools'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - '557baa97ed72'       
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'activity_predict'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'caret_classification_tools'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - 'ae60ef466288'       
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'csv_to_rdata'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'caret_classification_tools'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - '6b9d382cb4a5'
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'feature_selection'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'caret_classification_tools'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - '156d320299e1'
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'rcaret_classification_model'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'caret_classification_tools'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - 'e92a130f6a18'
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
