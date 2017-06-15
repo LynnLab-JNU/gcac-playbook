@@ -104,7 +104,13 @@ Vagrant.configure(2) do |config|
   config.vm.provision "ansible-gcac-dependencies", type: "ansible" do |ansible|
       ansible.limit = 'galaxy-servers'
       ansible.inventory_path = "provisioning/inventory/vagrant-hosts"
-      ansible.playbook = "provisioning/gcac-dependencies3.yml"
+      ansible.playbook = "provisioning/gcac-dependencies-playbook3.yml"
+  end
+
+  config.vm.provision "ansible-galaxy-tools", type: "ansible" do |ansible|
+      ansible.limit = 'galaxy-servers'
+      ansible.inventory_path = "provisioning/inventory/vagrant-hosts"
+      ansible.playbook = "provisioning/galaxy-tools-playbook4.yml"
   end
 
 end
