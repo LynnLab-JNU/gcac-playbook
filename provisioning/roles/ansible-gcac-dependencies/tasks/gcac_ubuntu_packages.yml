@@ -4,6 +4,7 @@
 - name: Install required gcac packages
   apt: pkg={{ item }} state={{ apt_package_state }}
   with_items:
+    - ed
     - libreadline-dev
     - texlive-base
     - texlive-extra-utils
@@ -14,7 +15,6 @@
     - texlive-generic-extra
     - texlive-lang-cjk
     - texlive-plain-extra
-    - linux-headers-3.13.0-24-generic
     - build-essential
     - texlive-full
     - fort77 
@@ -38,4 +38,4 @@
     - libghc-zlib-dev
     - zlib1g-dev
     - zlib1g-dbg
-    - libnlopt-dev
+    - libnlopt-dev 
