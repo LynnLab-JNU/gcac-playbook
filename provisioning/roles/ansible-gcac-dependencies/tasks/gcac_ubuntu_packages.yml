@@ -9,7 +9,7 @@
     - texlive-extra-utils
     - texlive-latex-base
     - texlive-latex-extra
-    - exlive-latex-recommended
+    - texlive-latex-recommended
     - texlive-luatex
     - texlive-generic-extra
     - texlive-lang-cjk
